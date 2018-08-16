@@ -12,7 +12,7 @@
 
     <title>Netpeak</title>
 </head>
-<body>
+<body ng-app>
     <header class="background-blue">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark">
@@ -105,7 +105,7 @@
         </div>
     </section>
 
-    <section class="section-highlight background-grey">
+    <section class="section-highlight background-grey" ng-controller="highlight">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -195,7 +195,7 @@
     <section class="section-testemonials background-grey">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 left-side">
                     <div class="rating"></div>
                     <h2 class="title">Customers <br />about AppStarter</h2>
                     <ul class="list-review">
@@ -204,7 +204,7 @@
                         <li>Google Play</li>
                     </ul>
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-8 right-side">
                     <div class="comment-block">
                         <div class="comment">
                             <img src="assets/images/customer-1.png" alt="Alternate Text" />
@@ -252,12 +252,12 @@
 
     <section class="section-pricing background-grey">
         <div class="container">
-            <div class="col-md-5">
-                <h2 class="title">Choose your plan</h2>
-                <p>This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To her surprise, she lost sight of her in a moment, and found herself walking.</p>
-            </div>
-            <div class="col-md-7">
-                <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <h2 class="title">Choose your plan</h2>
+                    <p>This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To her surprise, she lost sight of her in a moment, and found herself walking.</p>
+                </div>
+                <div class="col-md-7 d-flex">
                     <div class="pricing-block">
                         <h3 class="subscription-name">Professional</h3>
                         <p class="price">10$</p>
@@ -304,16 +304,18 @@
     </section>
 
     <footer class="background-grey">
-        <a class="navbar-brand" href="#">AppStarter</a>
-        <div class="copyright">
-            <p>Created with <img src="assets/images/heart-icon.png" alt="Alternate Text" /> by <b>Sergey Azovskiy</b></p>
-            <p>&copy; AppStarter, 2017</p>
+        <div class="container">
+            <a class="navbar-brand" href="#">AppStarter</a>
+            <div class="copyright">
+                <p>Created with <img src="assets/images/heart-icon.png" alt="Alternate Text" /> by <b>Sergey Azovskiy</b></p>
+                <p>&copy; AppStarter, 2017</p>
+            </div>
+            <ul class="social">
+                <li><a href="#"><img src="assets/images/twitter.png" alt="Alternate Text" /></a></li>
+                <li><a href="#"><img src="assets/images/facebook.png" alt="Alternate Text" /></a></li>
+                <li><a href="#"><img src="assets/images/instagram.png" alt="Alternate Text" /></a></li>
+            </ul>
         </div>
-        <ul class="social">
-            <li><a href="#"><img src="assets/images/twitter.png" alt="Alternate Text" /></a></li>
-            <li><a href="#"><img src="assets/images/facebook.png" alt="Alternate Text" /></a></li>
-            <li><a href="#"><img src="assets/images/instagram.png" alt="Alternate Text" /></a></li>
-        </ul>
     </footer>
 
     <!-- Optional JavaScript -->
@@ -321,6 +323,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"></script>
     <script src="assets/main.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-body {font-family: 'Nunito Sans', sans-serif; color:#f8f9fa;}
+body           {font-family: 'Nunito Sans', sans-serif; color:#f8f9fa;}
 body > section {padding:120px 0px;}
 
 .background-blue  {background-image:url(images/background-blue.jpg); background-repeat:no-repeat; background-size:cover; background-position: center;}
@@ -16,6 +16,14 @@ header                       {z-index:100;}
 .section-highlight .tab      {display:flex; align-items:flex-start;}
 .section-highlight .tab img  {width: 40px; margin-right:20px;}
 .section-video-tour          {height:500px; background-image:url(images/background-video-tour.png); background-size:cover; text-align:center;}
+
+.section-testemonials                  {padding:0; border-bottom:1px solid #e7e8ea;}
+.section-testemonials .left-side,
+.section-testemonials .right-side      {padding:120px 0px;}
+.section-testemonials .left-side       {position:relative; z-index:50;}
+.section-testemonials .left-side:after {content:''; position:absolute; z-index:-25; display:block; top:0; bottom:0; right:0; left:-1000%; background-color:white;}
+
+footer .container {display:flex; justify-content:space-between}
 
 /* Blocks */
 .section-features .block {text-align:center;}
