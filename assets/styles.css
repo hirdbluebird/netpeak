@@ -1,0 +1,24 @@
+body {font-family: 'Nunito Sans', sans-serif; color:#f8f9fa;}
+body > section {padding:120px 0px;}
+
+.background-blue  {background-image:url(images/background-blue.jpg); background-repeat:no-repeat; background-size:cover; background-position: center;}
+.background-grey  {background-color:#f8f9fa; color:#282b31;}
+.background-white {background-color:#fff;}
+
+.phone {background-image:url(images/tablet.png); background-repeat:no-repeat; background-size:100% 100%;}
+
+/* Sections */
+header                       {z-index:100;}
+.section-greating .left-side {display:flex; flex-direction:column; justify-content:center;}
+.section-greating .phone     {position:relative; top:120px;}
+.section-features            {text-align:center; z-index:50; padding:200px 0px 120px 0px;}
+.section-press .container    {display:flex; justify-content:space-between;}
+.section-highlight .tab      {display:flex; align-items:flex-start;}
+.section-highlight .tab img  {width: 40px; margin-right:20px;}
+.section-video-tour          {height:500px; background-image:url(images/background-video-tour.png); background-size:cover; text-align:center;}
+
+/* Blocks */
+.section-features .block {text-align:center;}
+.block-benefit {padding:10% 10% 0 10%; text-align:center;}
+
+

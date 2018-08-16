@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
     <!-- Required meta tags -->
@@ -7,17 +7,19 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="assets/styles.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
 
     <title>Netpeak</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
+    <header class="background-blue">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
                 <a class="navbar-brand" href="#">AppStarter</a>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
+                    <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
                             <a class="nav-link" href="#">Features</a>
                         </li>
@@ -38,33 +40,33 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-            </div><!--/.container-->
-        </nav>
+            </nav>
 
-        <section class="section-greating background-blue">
-            <div class="container">
-                <div class="col-md-6">
-                    <p><img src="assets/images/app-icon.png" alt="Alternate Text" /></p>
-                    <h2 class="title">AppStarter. Best landing page for web and mobile apps</h2>
-                    <p>
-                        <button class="btn gradient-orange">Watch video</button>
-                        <button class="btn">Download now</button>
-                    </p>
-                </div>
-                <div class="col-md-6">
-                    <div class="phone">
-                        <img src="assets/images/tablet-4.jpg" alt="Alternate Text" />
+            <section class="section-greating">
+                <div class="row">
+                    <div class="left-side col-md-6 no-gutters">
+                        <p><img src="assets/images/app-icon.png" alt="Alternate Text" /></p>
+                        <h2 class="title">AppStarter. Best landing page for web and mobile apps</h2>
+                        <p>
+                            <button class="btn gradient-orange">Watch video</button>
+                            <button class="btn">Download now</button>
+                        </p>
+                    </div>
+                    <div class="right-side col-md-6 no-gutters">
+                        <div class="phone">
+                            <img src="assets/images/tablet-4.jpg" alt="Alternate Text" />
+                        </div>
                     </div>
                 </div>
-            </div><!--/.container-->
-        </section>
+            </section>
+        </div><!--/.container-->
     </header>
 
     <section class="section-features background-grey">
         <div class="container">
             <h2 class="title">How does it work</h2>
             <div class="row">
-                <div class="col-md-4">
+                <div class="block col-md-4">
                     <div class="icon">
                         <img src="assets/images/sync-icon.png" alt="Alternate Text" />
                     </div>
@@ -72,7 +74,7 @@
                     <p>This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To her surprise.</p>
                     <a href="#">Watch video</a>
                 </div>
-                <div class="col-md-4">
+                <div class="block col-md-4">
                     <div class="icon">
                         <img src="assets/images/all-email-icon.png" alt="Alternate Text" />
                     </div>
@@ -80,7 +82,7 @@
                     <p>This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To her surprise.</p>
                     <a href="#">Watch video</a>
                 </div>
-                <div class="col-md-4">
+                <div class="block col-md-4">
                     <div class="icon">
                         <img src="assets/images/notifications-icon.png" alt="Alternate Text" />
                     </div>
@@ -105,32 +107,34 @@
 
     <section class="section-highlight background-grey">
         <div class="container">
-            <div class="col-md-6">
-                <div class="tab">
-                    <img src="assets/images/sync-mini-icon.png" alt="Alternate Text" />
-                    <div>
-                        <h4>Sync across all devices</h4>
-                        <p>This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To her surprise, she lost sight of her in a moment, and found herself walking.</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="tab">
+                        <img src="assets/images/sync-mini-icon.png" alt="Alternate Text" />
+                        <div>
+                            <h4>Sync across all devices</h4>
+                            <p>This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To her surprise, she lost sight of her in a moment, and found herself walking.</p>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <img src="assets/images/emails-mini-icon.png" alt="Alternate Text" />
+                        <div>
+                            <h4>All emails in one place</h4>
+                            <p>This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To her surprise, she lost sight of her in a moment, and found herself walking.</p>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <img src="assets/images/track-mini-icon.png" alt="Alternate Text" />
+                        <div>
+                            <h4>Track your time</h4>
+                            <p>This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To her surprise, she lost sight of her in a moment, and found herself walking.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="tab">
-                    <img src="assets/images/emails-mini-icon.png" alt="Alternate Text" />
-                    <div>
-                        <h4>All emails in one place</h4>
-                        <p>This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To her surprise, she lost sight of her in a moment, and found herself walking.</p>
+                <div class="col-md-6">
+                    <div class="phone">
+                        <img src="assets/images/tablet-2.jpg" alt="Alternate Text" />
                     </div>
-                </div>
-                <div class="tab">
-                    <img src="assets/images/track-mini-icon.png" alt="Alternate Text" />
-                    <div>
-                        <h4>Track your time</h4>
-                        <p>This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To her surprise, she lost sight of her in a moment, and found herself walking.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="phone">
-                    <img src="assets/images/tablet-2.jpg" alt="Alternate Text" />
                 </div>
             </div>
         </div><!--/.container-->
@@ -138,13 +142,15 @@
 
     <section class="section-getting-started background-blue">
         <div class="container">
-            <div class="col-md-6">
-                <h2 class="title">Download to get started</h2>
-                <p>This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To her surprise, she lost sight of her in a moment.</p>
-            </div>
-            <div class="col-md-6">
-                <button class="gradient-orange btn">Buy for 24$</button>
-                <button class="btn">Try It Free</button>
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="title">Download to get started</h2>
+                    <p>This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To her surprise, she lost sight of her in a moment.</p>
+                </div>
+                <div class="col-md-6">
+                    <button class="gradient-orange btn">Buy for 24$</button>
+                    <button class="btn">Try It Free</button>
+                </div>
             </div>
         </div>
     </section>
@@ -152,22 +158,22 @@
     <section class="section-benefits background-grey">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 block-benefit background-blue">
                     <div class="phone">
                         <img src="assets/images/tablet-3.jpg" alt="Alternate Text" />
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 block-benefit background-white">
                     <h2 class="title">Perfect landing page for your app</h2>
                     <p>This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To her surprise, she lost sight of her in a moment, and found herself walking.</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 block-benefit background-white">
                     <h2 class="title">Style guide and sample pages included</h2>
                     <p>This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To her surprise, she lost sight of her in a moment, and found herself walking.</p>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 block-benefit background-blue">
                     <div class="phone">
                         <img src="assets/images/tablet-4.jpg" alt="Alternate Text" />
                     </div>
@@ -177,62 +183,66 @@
     </section>
 
     <section class="section-video-tour">
-        <h2 class="title"></h2>
-        <p></p>
-        <button class="button-play-video">
-            <img src="assets/images/play-video-icon.png" alt="Alternate Text" />
-        </button>
+        <div class="container">
+            <h2 class="title">Watch video tour</h2>
+            <p>This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To her surprise, she lost sight of her.</p>
+            <button class="button-play-video">
+                <img src="assets/images/play-video-icon.png" alt="Alternate Text" />
+            </button>
+        </div>
     </section>
 
     <section class="section-testemonials background-grey">
         <div class="container">
-            <div class="col-md-4">
-                <div class="rating"></div>
-                <h2 class="title">Customers <br />about AppStarter</h2>
-                <ul class="list-review">
-                    <li>Read more reviwes:</li>
-                    <li>App Store</li>
-                    <li>Google Play</li>
-                </ul>
-            </div>
-            <div class="col-md-8">
-                <div class="comment-block">
-                    <div class="comment">
-                        <img src="assets/images/customer-1.png" alt="Alternate Text" />
-                        <p>This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To her surprise, she lost sight of her in a moment, and found herself.</p>
-                    </div>
-                    <div class="comment-info">
-                        <p class="person">
-                            <span class=""></span>
-                            <span class=""></span>
-                        </p>
-                        <a href="#"><img src="assets/images/twitter.png" alt="Alternate Text" /></a>
-                    </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="rating"></div>
+                    <h2 class="title">Customers <br />about AppStarter</h2>
+                    <ul class="list-review">
+                        <li>Read more reviwes:</li>
+                        <li>App Store</li>
+                        <li>Google Play</li>
+                    </ul>
                 </div>
-                <div class="comment-block">
-                    <div class="comment">
-                        <img src="assets/images/customer-2.png" alt="Alternate Text" />
-                        <p>This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To her surprise, she lost sight of her in a moment, and found herself.</p>
+                <div class="col-md-8">
+                    <div class="comment-block">
+                        <div class="comment">
+                            <img src="assets/images/customer-1.png" alt="Alternate Text" />
+                            <p>This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To her surprise, she lost sight of her in a moment, and found herself.</p>
+                        </div>
+                        <div class="comment-info">
+                            <p class="person">
+                                <span class=""></span>
+                                <span class=""></span>
+                            </p>
+                            <a href="#"><img src="assets/images/twitter.png" alt="Alternate Text" /></a>
+                        </div>
                     </div>
-                    <div class="comment-info">
-                        <p class="person">
-                            <span class=""></span>
-                            <span class=""></span>
-                        </p>
-                        <a href="#"><img src="assets/images/twitter.png" alt="Alternate Text" /></a>
+                    <div class="comment-block">
+                        <div class="comment">
+                            <img src="assets/images/customer-2.png" alt="Alternate Text" />
+                            <p>This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To her surprise, she lost sight of her in a moment, and found herself.</p>
+                        </div>
+                        <div class="comment-info">
+                            <p class="person">
+                                <span class=""></span>
+                                <span class=""></span>
+                            </p>
+                            <a href="#"><img src="assets/images/twitter.png" alt="Alternate Text" /></a>
+                        </div>
                     </div>
-                </div>
-                <div class="comment-block">
-                    <div class="comment">
-                        <img src="assets/images/customer-3.png" alt="Alternate Text" />
-                        <p>This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To her surprise, she lost sight of her in a moment, and found herself.</p>
-                    </div>
-                    <div class="comment-info">
-                        <p class="person">
-                            <span class=""></span>
-                            <span class=""></span>
-                        </p>
-                        <a href="#"><img src="assets/images/twitter.png" alt="Alternate Text" /></a>
+                    <div class="comment-block">
+                        <div class="comment">
+                            <img src="assets/images/customer-3.png" alt="Alternate Text" />
+                            <p>This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To her surprise, she lost sight of her in a moment, and found herself.</p>
+                        </div>
+                        <div class="comment-info">
+                            <p class="person">
+                                <span class=""></span>
+                                <span class=""></span>
+                            </p>
+                            <a href="#"><img src="assets/images/twitter.png" alt="Alternate Text" /></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -293,7 +303,7 @@
         </div><!--/.container-->
     </section>
 
-    <footer>
+    <footer class="background-grey">
         <a class="navbar-brand" href="#">AppStarter</a>
         <div class="copyright">
             <p>Created with <img src="assets/images/heart-icon.png" alt="Alternate Text" /> by <b>Sergey Azovskiy</b></p>
@@ -311,5 +321,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="assets/main.js"></script>
 </body>
 </html>
