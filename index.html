@@ -248,9 +248,6 @@
                                 ng-model="selectedItem" 
                                 ng-options="license.name as license.value for license in licensies"
                                 ng-change="updateLicenseCount()">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
                         </select>
                     </p>
                     <div class="input-group">
@@ -290,19 +287,26 @@
         </div><!--/.container-->
     </section>
 
-    <section class="section-contact background-blue">
+    <section class="section-contact background-blue" ng-controller="userForm">
         <div class="container">
             <div class="col-md-8">
                 <h2 class="title">Stay in touch</h2>
                 <p>This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To her surprise, she lost sight of her in a moment.</p>
-                <form action="/" method="post">
+                <div>
                     <div>
-                        <input type="text" name="name" value="" placeholder="Your name"/>
-                        <input type="email" name="name" value="" placeholder="Email Adress"/>
+                        <input type="text" ng-model="user.name" placeholder="Your name"/>
+                        <input type="email" ng-model="user.email" placeholder="Email Adress"/>
                     </div>
-                    <textarea placeholder="Message"></textarea>
-                    <button class="btn gradient-orange"></button>
-                </form>
+                    <div>
+                        <select ng-model="user.country"
+                                ng-options="country.name as country.value for country in countries">
+                            <option value="" disabled selected>Choose Country</option>
+                        </select>
+                        <input type="text" ng-if="user.country" ng-model="user.city"/>
+                    </div>
+                    <textarea placeholder="Message" ng-model="user.message"></textarea>
+                    <button class="btn gradient-orange" ng-click="sendUserInfo()">Submit</button>
+                </div>
             </div>
         </div><!--/.container-->
     </section>

@@ -65,4 +65,32 @@ let netPeakApp = angular.module('app', []);
             }
         }
     });
+    app.controller('userForm', function ($scope) {
+        $scope.countries = [
+            {
+                name: 'Ukraine',
+                value: 'uk'
+            },
+            {
+                name: 'German',
+                value: 'gr'
+            },
+            {
+                name: 'Italia',
+                value: 'it'
+            },
+            {
+                name: 'Great Britain',
+                value: 'gb'
+            }
+        ];
+        $scope.sendUserInfo = function () {
+            if ($scope.user.name && $scope.user.email) {
+                alert(JSON.stringify($scope.user));
+                return;
+            }
+            alert('Fill the \'name\' and \'email\' fields');
+            return;
+        }
+    });
 })(netPeakApp)
