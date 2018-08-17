@@ -12,7 +12,7 @@
 
     <title>Netpeak</title>
 </head>
-<body ng-app>
+<body ng-app="app">
     <header class="background-blue">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark">
@@ -108,29 +108,15 @@
     <section class="section-highlight background-grey" ng-controller="highlight">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <div class="tab">
-                        <img src="assets/images/sync-mini-icon.png" alt="Alternate Text" />
+                <!--<div class="col-md-6">
+                    <div class="tab" ng-repeat="tab in tabs" ng-click="showId()">
+                        <img src="{{tab.imageUrl}}" alt="Alternate Text" />
                         <div>
-                            <h4>Sync across all devices</h4>
-                            <p>This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To her surprise, she lost sight of her in a moment, and found herself walking.</p>
+                            <h4>{{tab.title}}</h4>
+                            <p>{{tab.text}}</p>
                         </div>
                     </div>
-                    <div class="tab">
-                        <img src="assets/images/emails-mini-icon.png" alt="Alternate Text" />
-                        <div>
-                            <h4>All emails in one place</h4>
-                            <p>This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To her surprise, she lost sight of her in a moment, and found herself walking.</p>
-                        </div>
-                    </div>
-                    <div class="tab">
-                        <img src="assets/images/track-mini-icon.png" alt="Alternate Text" />
-                        <div>
-                            <h4>Track your time</h4>
-                            <p>This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To her surprise, she lost sight of her in a moment, and found herself walking.</p>
-                        </div>
-                    </div>
-                </div>
+                </div>-->
                 <div class="col-md-6">
                     <div class="phone">
                         <img src="assets/images/tablet-2.jpg" alt="Alternate Text" />
@@ -250,17 +236,35 @@
     </section>
 
 
-    <section class="section-pricing background-grey">
+    <section class="section-pricing background-grey" ng-controller="pricing">
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
                     <h2 class="title">Choose your plan</h2>
                     <p>This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To her surprise, she lost sight of her in a moment, and found herself walking.</p>
+                    <p>
+                        <span>select the number of licenses:</span>
+                        <select class="custom-select" 
+                                ng-model="selectedItem" 
+                                ng-options="license.name as license.value for license in licensies"
+                                ng-change="updateLicenseCount()">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </p>
+                    <div class="input-group">
+                        <input type="text" 
+                               class="form-control" 
+                               ng-model="promocode"
+                               placeholder="Promocode"/>
+                        <button class="btn" ng-click="checkPromocode()">Apply</button>
+                    </div>
                 </div>
                 <div class="col-md-7 d-flex">
                     <div class="pricing-block">
                         <h3 class="subscription-name">Professional</h3>
-                        <p class="price">10$</p>
+                        <p class="price">{{currentSubscriptionPrice}}$</p>
                         <ul class="advantages">
                             <li>Hundreds of elements</li>
                             <li>Style guide</li>
