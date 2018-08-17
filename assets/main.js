@@ -19,7 +19,6 @@ let netPeakApp = angular.module('app', []);
                 imageUrl: 'assets/images/track-mini-icon.png'
             }
         ];
-
         function showId() {
             console.log('success')
         }

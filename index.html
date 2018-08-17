@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="assets/styles.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,400i,700,800" rel="stylesheet">
 
     <title>Netpeak</title>
 </head>
@@ -20,7 +20,7 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="#">Features</a>
                         </li>
                         <li class="nav-item">
@@ -33,7 +33,7 @@
                             <a class="nav-link" href="#">Pricing</a>
                         </li>
                         <li class="nav-item">
-                            <button class="btn">get it free</button>
+                            <button class="btn-default">GET IT FREE</button>
                         </li>
                     </ul>
                 </div>
@@ -45,16 +45,16 @@
             <section class="section-greating">
                 <div class="row">
                     <div class="left-side col-md-6 no-gutters">
-                        <p><img src="assets/images/app-icon.png" alt="Alternate Text" /></p>
-                        <h2 class="title">AppStarter. Best landing page for web and mobile apps</h2>
+                        <div><img src="assets/images/app-icon.png" alt="Alternate Text" /></div>
+                        <h2 class="title"><span>AppStarter.</span> Best landing page for web and mobile apps</h2>
                         <p>
-                            <button class="btn gradient-orange">Watch video</button>
-                            <button class="btn">Download now</button>
+                            <button class="btn-default gradient-orange">Download now</button>
+                            <button class="btn-default">Watch video</button>
                         </p>
                     </div>
                     <div class="right-side col-md-6 no-gutters">
                         <div class="phone">
-                            <img src="assets/images/tablet-4.jpg" alt="Alternate Text" />
+                            <img src="assets/images/tablet-1.png" alt="Alternate Text" />
                         </div>
                     </div>
                 </div>
@@ -64,31 +64,37 @@
 
     <section class="section-features background-grey">
         <div class="container">
-            <h2 class="title">How does it work</h2>
+            <h2 class="title"><span>How</span> does it work</h2>
             <div class="row">
-                <div class="block col-md-4">
-                    <div class="icon">
-                        <img src="assets/images/sync-icon.png" alt="Alternate Text" />
+                <div class="col-md-4">
+                    <div class="block-feature">
+                        <div class="icon">
+                            <img src="assets/images/sync-icon.png" alt="Alternate Text" />
+                        </div>
+                        <h4 class="title"><span>Sync</span> across all devices</h4>
+                        <p>This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To her surprise.</p>
+                        <a href="#">Watch video</a>
                     </div>
-                    <h3>Sync across all devices</h3>
-                    <p>This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To her surprise.</p>
-                    <a href="#">Watch video</a>
                 </div>
-                <div class="block col-md-4">
-                    <div class="icon">
-                        <img src="assets/images/all-email-icon.png" alt="Alternate Text" />
+                <div class="col-md-4">
+                    <div class="block-feature">
+                        <div class="icon">
+                            <img src="assets/images/all-email-icon.png" alt="Alternate Text" />
+                        </div>
+                        <h4 class="title"><span>All emails</span> in one place</h4>
+                        <p>This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To her surprise.</p>
+                        <a href="#">Watch video</a>
                     </div>
-                    <h3>All emails in one place</h3>
-                    <p>This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To her surprise.</p>
-                    <a href="#">Watch video</a>
                 </div>
-                <div class="block col-md-4">
-                    <div class="icon">
-                        <img src="assets/images/notifications-icon.png" alt="Alternate Text" />
+                <div class="col-md-4">
+                    <div class="block-feature">
+                        <div class="icon">
+                            <img src="assets/images/notifications-icon.png" alt="Alternate Text" />
+                        </div>
+                        <h4 class="title"><span>Notifications</span> about sales</h4>
+                        <p>This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To her surprise.</p>
+                        <a href="#">Watch video</a>
                     </div>
-                    <h3>Notifications about sales</h3>
-                    <p>This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To her surprise.</p>
-                    <a href="#">Watch video</a>
                 </div>
             </div>
         </div><!--/.container-->
@@ -108,18 +114,18 @@
     <section class="section-highlight background-grey" ng-controller="highlight">
         <div class="container">
             <div class="row">
-                <!--<div class="col-md-6">
-                    <div class="tab" ng-repeat="tab in tabs" ng-click="showId()">
+                <div class="col-md-6">
+                    <div class="block-highlight" ng-repeat="tab in tabs" ng-click="showId()">
                         <img src="{{tab.imageUrl}}" alt="Alternate Text" />
                         <div>
-                            <h4>{{tab.title}}</h4>
+                            <h4 class="title">{{tab.title}}</h4>
                             <p>{{tab.text}}</p>
                         </div>
                     </div>
-                </div>-->
+                </div>
                 <div class="col-md-6">
                     <div class="phone">
-                        <img src="assets/images/tablet-2.jpg" alt="Alternate Text" />
+                        <img src="assets/images/tablet-2.png" alt="Alternate Text" />
                     </div>
                 </div>
             </div>
@@ -129,13 +135,13 @@
     <section class="section-getting-started background-blue">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <h2 class="title">Download to get started</h2>
+                <div class="col-md-6 left-side">
+                    <h2 class="title"><span>Download</span> to get started</h2>
                     <p>This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To her surprise, she lost sight of her in a moment.</p>
                 </div>
-                <div class="col-md-6">
-                    <button class="gradient-orange btn">Buy for 24$</button>
-                    <button class="btn">Try It Free</button>
+                <div class="col-md-6 right-side">
+                    <button class="btn-default gradient-orange">Buy for 24$</button>
+                    <button class="btn-default">Try It Free</button>
                 </div>
             </div>
         </div>
@@ -146,22 +152,22 @@
             <div class="row">
                 <div class="col-md-6 block-benefit background-blue">
                     <div class="phone">
-                        <img src="assets/images/tablet-3.jpg" alt="Alternate Text" />
+                        <img src="assets/images/tablet-3.png" alt="Alternate Text" />
                     </div>
                 </div>
                 <div class="col-md-6 block-benefit background-white">
-                    <h2 class="title">Perfect landing page for your app</h2>
+                    <h2 class="title"><span>Perfect</span> landing page for your app</h2>
                     <p>This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To her surprise, she lost sight of her in a moment, and found herself walking.</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6 block-benefit background-white">
-                    <h2 class="title">Style guide and sample pages included</h2>
+                    <h2 class="title"><span>Style guide</span> and sample pages included</h2>
                     <p>This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To her surprise, she lost sight of her in a moment, and found herself walking.</p>
                 </div>
                 <div class="col-md-6 block-benefit background-blue">
                     <div class="phone">
-                        <img src="assets/images/tablet-4.jpg" alt="Alternate Text" />
+                        <img src="assets/images/tablet-4.png" alt="Alternate Text" />
                     </div>
                 </div>
             </div>
@@ -170,11 +176,13 @@
 
     <section class="section-video-tour">
         <div class="container">
-            <h2 class="title">Watch video tour</h2>
-            <p>This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To her surprise, she lost sight of her.</p>
-            <button class="button-play-video">
-                <img src="assets/images/play-video-icon.png" alt="Alternate Text" />
-            </button>
+            <div class="col-md-6 offset-md-3">
+                <h2 class="title"><span>Watch</span> video tour</h2>
+                <p>This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To her surprise, she lost sight of her.</p>
+                <button class="button-play-video">
+                    <img src="assets/images/play-video-icon.png" alt="Alternate Text" />
+                </button>
+            </div>
         </div>
     </section>
 
@@ -332,6 +340,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.7.3/angular-sanitize.min.js"></script>-->
     <script src="assets/main.js"></script>
 </body>
 </html>
