@@ -27,11 +27,16 @@ header .nav-item             {margin:0 10px;}
 .section-getting-started .right-side   {display:flex; align-items:center; justify-content:flex-end;}
 .section-getting-started .btn-default  {padding:15px 30px; margin-left:20px;}
 
-.section-testemonials                  {padding:0; border-bottom:1px solid #e7e8ea;}
+.section-testemonials                     {padding:0; border-bottom:1px solid #e7e8ea;}
 .section-testemonials .left-side,
-.section-testemonials .right-side      {display:flex; flex-direction:column; padding-top:120px;}
-.section-testemonials .left-side       {position:relative; z-index:50;}
-.section-testemonials .left-side:after {content:''; position:absolute; z-index:-25; display:block; top:0; bottom:0; right:0; left:-1000%; background-color:white;}
+.section-testemonials .right-side         {display:flex; flex-direction:column; padding-top:120px;}
+.section-testemonials .left-side          {justify-content:space-between;}
+.section-testemonials .left-side          {position:relative; z-index:50;}
+.section-testemonials .left-side:after    {content:''; position:absolute; z-index:-25; display:block; top:0; bottom:0; right:0; left:-1000%; background-color:white;}
+.section-testemonials .title              {margin-top:20px;}
+.section-testemonials .list-arrow-steps a {color:#282b31; font-weight:bold; letter-spacing:0.8px;}
+.section-testemonials .review-links       {margin-bottom:50px;}
+.section-testemonials .review-links p     {color:#999ea8; font-size:18px;}
 
 footer .container {display:flex; justify-content:space-between}
 
@@ -54,14 +59,13 @@ footer .container {display:flex; justify-content:space-between}
 .block-comment .user-info p      {color:#999ea8; padding-top:10px;}
 .block-comment.align-left                    {align-self:flex-start;}
 .block-comment.align-right                   {align-self:flex-end;}
-.block-comment.align-right .comment-body     {flex-direction:row-reverse;}
+.block-comment.align-right .comment-body     {flex-direction:row-reverse; text-align:right;}
 .block-comment.align-right .comment-body img {margin-left:10px;}
-.block-comment.align-left  .comment-body     {flex-direction:row;}
+.block-comment.align-left  .comment-body     {flex-direction:row; text-align:left;}
 .block-comment.align-left  .comment-body img {margin-right:10px;}
 
-.list-arrow-steps {list-style:none; padding}
+.list-arrow-steps    {list-style-image:url(images/arrow-icon.png);}
 .list-arrow-steps li {position:relative;}
-.list-arrow-steps li:before {content:'\27F6'; color:#d3d5d9; font-weight:bold;}
 
 
 /* Buttons */
