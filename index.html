@@ -249,29 +249,30 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
-                    <h2 class="title">Choose your plan</h2>
+                    <h2 class="title"><span>Choose</span> your plan</h2>
                     <p>This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To her surprise, she lost sight of her in a moment, and found herself walking.</p>
-                    <p>
-                        <span>select the number of licenses:</span>
+                    <p class="content-select">
+                        <span>Select the number of licenses:</span>
                         <select class="custom-select" 
                                 ng-model="selectedItem" 
                                 ng-options="license.name as license.value for license in licensies"
                                 ng-change="updateLicenseCount()">
                         </select>
                     </p>
-                    <div class="input-group">
+                    <p class="mb-0">Enter the promo code:</p>
+                    <div class="content-select-button">
                         <input type="text" 
                                class="form-control" 
                                ng-model="promocode"
-                               placeholder="Promocode"/>
+                               placeholder="Promo code"/>
                         <button class="btn" ng-click="checkPromocode()">Apply</button>
                     </div>
                 </div>
                 <div class="col-md-7 d-flex">
-                    <div class="pricing-block">
+                    <div class="block-pricing background-blue flex-grow-1">
                         <h3 class="subscription-name">Professional</h3>
                         <p class="price">{{currentSubscriptionPrice}}$</p>
-                        <ul class="advantages">
+                        <ul class="advantages list-check-mark-steps">
                             <li>Hundreds of elements</li>
                             <li>Style guide</li>
                             <li>160 icons included</li>
@@ -280,16 +281,16 @@
                         </ul>
                         <button class="btn gradient-orange">Buy Now</button>
                     </div>
-                    <div class="pricing-block">
+                    <div class="block-pricing background-white">
                         <h3 class="subscription-name">Starter</h3>
                         <p class="price">Free</p>
-                        <ul class="advantages">
+                        <ul class="advantages list-check-mark-steps">
                             <li>Hundreds of elements</li>
                             <li>Style guide</li>
                             <li>30 icons included</li>
                             <li>Personal licence</li>
                         </ul>
-                        <button class="btn gradient-aquamarine">Get Free</button>
+                        <button class="btn gradient-aqua">Get Free</button>
                     </div>
                 </div>
             </div>
@@ -298,7 +299,7 @@
 
     <section class="section-contact background-blue" ng-controller="userForm">
         <div class="container">
-            <div class="col-md-8">
+            <div class="col-md-8 offset-md-2">
                 <h2 class="title">Stay in touch</h2>
                 <p>This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To her surprise, she lost sight of her in a moment.</p>
                 <div>

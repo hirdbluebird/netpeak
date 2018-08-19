@@ -7,6 +7,7 @@ p              {font-size:14px;}
 .background-white {background-color:#fff;}
 
 .gradient-orange  {background-image:linear-gradient(-40deg,#ffe641 35%,#ff8e64 65%); color:white!important;}
+.gradient-aqua    {background-image: linear-gradient(102deg, #009fc5, #3cecb0); color:white!important;}
 
 .title              {font-weight:300;}
 .title > span       {font-weight:800;}
@@ -38,6 +39,14 @@ header .nav-item             {margin:0 10px;}
 .section-testemonials .review-links       {margin-bottom:50px;}
 .section-testemonials .review-links p     {color:#999ea8; font-size:18px;}
 
+.section-pricing .content-select               {display:flex; align-items:center;}
+.section-pricing .content-select select        {width:70px; margin-left:20px;}
+.section-pricing .content-select-button        {display:flex;}
+.section-pricing .content-select-button button {width:150px; margin-left:20px;}
+.section-pricing .block-pricing                {flex-grow:1;}
+
+.section-contact {text-align:center;}
+
 footer .container {display:flex; justify-content:space-between}
 
 /* Blocks */
@@ -64,8 +73,16 @@ footer .container {display:flex; justify-content:space-between}
 .block-comment.align-left  .comment-body     {flex-direction:row; text-align:left;}
 .block-comment.align-left  .comment-body img {margin-right:10px;}
 
-.list-arrow-steps    {list-style-image:url(images/arrow-icon.png);}
-.list-arrow-steps li {position:relative;}
+.block-pricing                    {text-align:center; border-radius:12px; padding:20px 0px;}
+.block-pricing.background-blue    {color:white;}
+.block-pricing .subscription-name {border-style:solid; border-color:#e7e8ea; border-width:1px 0px 1px 0px; background-color:rgba(0,0,0,0.05); font-size:11px; letter-spacing:2px; font-weight:bold; padding:12px 0; margin:30px 0px;}
+.block-pricing .price             {font-size:60px;}
+.block-pricing .advantages        {text-align:left; margin:0px 50px 30px 50px}
+.block-pricing:hover              {transform:scale(1.1); cursor:pointer;}
+
+.list-arrow-steps      {list-style-image:url(images/arrow-icon.png);}
+.list-check-mark-steps {list-style-image:url(images/check-mark-icon.png);}
+
 
 
 /* Buttons */
