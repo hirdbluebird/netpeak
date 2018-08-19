@@ -300,23 +300,45 @@
     <section class="section-contact background-blue" ng-controller="userForm">
         <div class="container">
             <div class="col-md-8 offset-md-2">
-                <h2 class="title">Stay in touch</h2>
-                <p>This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To her surprise, she lost sight of her in a moment.</p>
-                <div>
-                    <div>
-                        <input type="text" ng-model="user.name" placeholder="Your name"/>
-                        <input type="email" ng-model="user.email" placeholder="Email Adress"/>
+                <h2 class="title"><span>Stay</span> in touch</h2>
+                <p class="mb-4">This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To her surprise, she lost sight of her in a moment.</p>
+                <form class="form-user-info">
+                    <div class="form-group row">
+                        <div class="col">
+                            <input type="text" 
+                                   ng-model="user.name" 
+                                   placeholder="Your name" 
+                                   class="form-control"/>
+                        </div>
+                        <div class="col">
+                            <input type="email" 
+                                   ng-model="user.email" 
+                                   placeholder="Email Adress" 
+                                   class="form-control"/>
+                        </div>
                     </div>
-                    <div>
-                        <select ng-model="user.country"
-                                ng-options="country.name as country.value for country in countries">
-                            <option value="" disabled selected>Choose Country</option>
-                        </select>
-                        <input type="text" ng-if="user.country" ng-model="user.city"/>
+                    <div class="form-group row">
+                        <div class="col">
+                            <select ng-model="user.country"
+                                    ng-options="country.name as country.value for country in countries"
+                                    class="form-control col">
+                                <option value="" disabled selected>Choose Country</option>
+                            </select>
+                        </div>
+                        <div class="col" ng-if="user.country" >
+                            <input type="text" 
+                                   ng-model="user.city" 
+                                   class="form-control col" 
+                                   placeholder="Enter City"/>
+                        </div>
                     </div>
-                    <textarea placeholder="Message" ng-model="user.message"></textarea>
-                    <button class="btn gradient-orange" ng-click="sendUserInfo()">Submit</button>
-                </div>
+                    <div class="row">
+                        <div class="col">
+                            <textarea placeholder="Message" ng-model="user.message" class="form-control"></textarea>
+                        </div>
+                    </div>
+                        <button class="btn gradient-orange" ng-click="sendUserInfo()">Submit</button>
+                </form>
             </div>
         </div><!--/.container-->
     </section>

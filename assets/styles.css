@@ -7,7 +7,7 @@ p              {font-size:14px;}
 .background-white {background-color:#fff;}
 
 .gradient-orange  {background-image:linear-gradient(-40deg,#ffe641 35%,#ff8e64 65%); color:white!important;}
-.gradient-aqua    {background-image: linear-gradient(102deg, #009fc5, #3cecb0); color:white!important;}
+.gradient-aqua    {background-image:linear-gradient(102deg, #009fc5, #3cecb0); color:white!important;}
 
 .title              {font-weight:300;}
 .title > span       {font-weight:800;}
@@ -46,8 +46,12 @@ header .nav-item             {margin:0 10px;}
 .section-pricing .block-pricing                {flex-grow:1;}
 
 .section-contact {text-align:center;}
+.section-contact .title {margin-bottom:20px;}
 
-footer .container {display:flex; justify-content:space-between}
+footer               {padding:20px;}
+footer .container    {display:flex; justify-content:space-between; align-items: center;}
+footer .navbar-brand {color:#282b31}
+footer .copyright p  {font-size:11px; color:#999ea8; text-align:center; margin-bottom:5px;}
 
 /* Blocks */
 .block-benefit           {height:60vh; padding:5% 10% 0 5%; overflow:hidden; text-align:center;}
@@ -75,15 +79,22 @@ footer .container {display:flex; justify-content:space-between}
 
 .block-pricing                    {text-align:center; border-radius:12px; padding:20px 0px;}
 .block-pricing.background-blue    {color:white;}
+.block-pricing:hover              {transform:scale(1.1); cursor:pointer;}
 .block-pricing .subscription-name {border-style:solid; border-color:#e7e8ea; border-width:1px 0px 1px 0px; background-color:rgba(0,0,0,0.05); font-size:11px; letter-spacing:2px; font-weight:bold; padding:12px 0; margin:30px 0px;}
 .block-pricing .price             {font-size:60px;}
 .block-pricing .advantages        {text-align:left; margin:0px 50px 30px 50px}
-.block-pricing:hover              {transform:scale(1.1); cursor:pointer;}
 
 .list-arrow-steps      {list-style-image:url(images/arrow-icon.png);}
 .list-check-mark-steps {list-style-image:url(images/check-mark-icon.png);}
 
+.form-user-info          {background:white; border-radius:12px; text-align:center; padding:70px;}
+.form-user-info textarea {min-height:200px; margin-bottom:20px;}
 
+.social                {display:flex; list-style:none; padding:0; margin:0;}
+.social li             {display:flex; align-items:center; justify-content:center; width:35px; height:35px; border-color:#e7e8ea; border-style:solid; border-width:1px 0 1px 1px; text-align:center;}
+.social li:last-child  {border-right:1px solid #e7e8ea; border-top-right-radius:6px; border-bottom-right-radius:6px;}
+.social li:first-child {border-top-left-radius:6px; border-bottom-left-radius:6px;}
+.social li:hover       {background-color: rgba(231,232,234,0.3)}
 
 /* Buttons */
 .btn-default       {padding:7.5px 15px; background-color:#fff; color:#010101; font-weight:bold; letter-spacing:0.05em; border:none; border-radius:5px;}
