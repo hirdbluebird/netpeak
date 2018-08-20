@@ -19,9 +19,16 @@ let netPeakApp = angular.module('app', []);
                 imageUrl: 'assets/images/track-mini-icon.png'
             }
         ];
-        function showId() {
-            console.log('success')
-        }
+
+        $scope.tabSelected = 0;
+
+        $scope.setTab = function (newTab) {
+            $scope.tabSelected = newTab;
+        };
+
+        $scope.isSet = function (tabNum) {
+            return $scope.tabSelected === tabNum;
+        };
     });
     app.controller('pricing', function ($scope) {
         $scope.licensies = [

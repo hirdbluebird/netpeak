@@ -115,7 +115,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="block-highlight" ng-repeat="tab in tabs" ng-click="showId()">
+                    <div class="block-highlight" 
+                         ng-repeat="tab in tabs" 
+                         ng-click="$parent.setTab($index)">
                         <img src="{{tab.imageUrl}}" alt="Alternate Text" />
                         <div>
                             <h4 class="title">{{tab.title}}</h4>
@@ -125,7 +127,10 @@
                 </div>
                 <div class="col-md-6">
                     <div class="phone">
-                        <img src="assets/images/tablet-2.png" alt="Alternate Text" />
+                        <img src="assets/images/tablet-{{$index + 1}}.png" 
+                             alt="Alternate Text"
+                             ng-repeat="phone in [0,1,2]"
+                             ng-show="$parent.isSet($index)"/>
                     </div>
                 </div>
             </div>
